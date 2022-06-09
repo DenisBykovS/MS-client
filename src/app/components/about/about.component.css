@@ -1,0 +1,22 @@
+.about {
+  margin: 0 auto;
+  width: 1200px;
+  height: 397px;
+}
+.about div {
+  display: flex;
+}
+.about p {
+  display: inline-block;
+  padding: 1.5rem 0;
+}
+.about img {
+  border-radius: 5px;
+  width: 250px;
+  padding: 1.5rem;
+  padding-right: 0;
+}
+.about-inner {
+  display: flex;
+  flex-direction: column;
+}

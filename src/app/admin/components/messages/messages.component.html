@@ -1,0 +1,12 @@
+<div class="mesages">
+  <div *ngFor="let message of messages" class="message">
+    <strong>{{ message.name }}</strong>
+    <strong>{{ message.phone }}</strong>
+    <strong>{{ message.dateSing }}</strong>
+    <strong>{{ message.hours }}</strong>
+    <p>
+      {{ message.text }}
+    </p>
+    <a (click)="remove(message._id)" class="del">Удалить</a>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+.search {
+  margin: 0 auto;
+  width: 1200px;
+}
+.search-field {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  height: 2rem;
+  padding: 2px 5px;
+  border: 1px solid crimson;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.portfolio {
+  margin: 0 auto;
+  width: 1200px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-name {
+  display: none;
+}
+.portfolio-card {
+  margin: 10px auto;
+  position: relative;
+}
+.portfolio-card img {
+  height: 350px;
+  border-radius: 5px;
+}
+.del {
+  color: lightslategrey;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+}
+.edit {
+  color: lightslategrey;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: none;
+}
+.edit:hover {
+  color: crimson;
+}
+.del:hover {
+  color: crimson;
+}
+a {
+  cursor: pointer;
+}

@@ -1,0 +1,25 @@
+<div class="add-foto">
+  <form class="form" action="" [formGroup]="form" (submit)="addFoto()">
+    <input formControlName="name" type="text" placeholder="#TEG" />
+    <hr />
+    <div class="image">
+      <img class="preview" [src]="imagePrev" alt="image" *ngIf="imagePrev" />
+    </div>
+    <hr />
+    <input
+      (change)="onFileUpload($event)"
+      type="file"
+      style="display: none"
+      #input
+    />
+    <button
+      (click)="trigger()"
+      [disabled]="form.disabled"
+      class="btn block-btn"
+      type="button"
+    >
+      загрузить изображение
+    </button>
+    <button class="btn save" type="submit">Сохранить</button>
+  </form>
+</div>

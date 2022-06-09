@@ -1,0 +1,36 @@
+.services-pedicure {
+  margin: 30px auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-pedicure div {
+  border-radius: 5px;
+  background-color: honeydew;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.services-pedicure div p {
+  margin: 5px auto;
+}
+
+.services-pedicure img {
+  height: 300px;
+}
+.ms-btn {
+  display: block;
+  border-radius: 5px;
+  width: 500px;
+  background-color: lightslategrey;
+  color: gold;
+  border: none;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.ms-btn:hover {
+  background-color: gold;
+  color: lightslategrey;
+}

@@ -1,0 +1,33 @@
+.search {
+  margin: 0 auto;
+  width: 1200px;
+}
+.search-field {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  height: 2rem;
+  padding: 2px 5px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.portfolio {
+  margin: 0 auto;
+  width: 1200px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-name {
+  display: none;
+}
+.portfolio-card {
+  height: 400px;
+  margin: 10px auto;
+}
+.portfolio-card img {
+  height: 350px;
+  border-radius: 5px;
+}

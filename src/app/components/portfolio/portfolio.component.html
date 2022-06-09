@@ -1,0 +1,16 @@
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Portfolio start -->
+<div class="search">
+  <input
+    class="search-field"
+    type="text"
+    placeholder="Поиск по галереи"
+    [(ngModel)]="text"
+  />
+</div>
+<div class="portfolio">
+  <div *ngFor="let foto of portfolioArr | search: text" class="portfolio-card">
+    <div class="portfolio-name">{{ foto.name }}</div>
+    <img src="{{ foto.imageSrc }}" alt="img" />
+  </div>
+</div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Portfolio end -->

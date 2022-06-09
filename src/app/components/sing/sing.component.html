@@ -1,0 +1,74 @@
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! sing up start -->
+<div class="sing-up">
+  <form [formGroup]="form" (submit)="submit()">
+    <input formControlName="name" type="text" placeholder="ваше имя" />
+    <input
+      maxlength="11"
+      formControlName="phone"
+      type="number"
+      placeholder="ваш номер телефона"
+    />
+    <input
+      readonly
+      #inputElement
+      formControlName="dateSing"
+      (click)="onCalendar()"
+      type="text"
+      placeholder="выбирите дату"
+    />
+    <div *ngIf="calendarDisplay" class="calendar">
+      <ul class="month-menu">
+        <li><i (click)="go(-1)" class="fa fa-arrow-left left"></i></li>
+        <span class="month">{{ mon | rus }}</span>
+        <li><i (click)="go(+1)" class="fa fa-arrow-right right"></i></li>
+      </ul>
+      <table>
+        <tr>
+          <th>пн</th>
+          <th>вт</th>
+          <th>ср</th>
+          <th>чт</th>
+          <th>пт</th>
+          <th>сб</th>
+          <th>вс</th>
+        </tr>
+        <tr *ngFor="let week of calendar">
+          <td
+            *ngFor="let day of week.days"
+            [class.disabled]="day.disabled"
+            (click)="singDate(day.value)"
+            (click)="onCalendar()"
+          >
+            <span [class.selected]="day.selected" [class.active]="day.active">
+              {{ day.value | moment: "DD" }}
+            </span>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <select formControlName="hours" name="" id="">
+      <option value="желаемое время">желаемое время</option>
+      <option value="10:00">10:00</option>
+      <option value="11:00">11:00</option>
+      <option value="12:00">12:00</option>
+      <option value="13:00">13:00</option>
+      <option value="14:00">14:00</option>
+      <option value="15:00">15:00</option>
+      <option value="16:00">16:00</option>
+      <option value="17:00">17:00</option>
+      <option value="18:00">18:00</option>
+      <option value="19:00">19:00</option>
+      <option value="20:00">20:00</option>
+    </select>
+    <textarea
+      formControlName="text"
+      name=""
+      id="id"
+      placeholder="пожелания"
+    ></textarea>
+    <button [disabled]="form.invalid" class="sing-up-btn" type="submit">
+      записаться
+    </button>
+  </form>
+</div>
+<!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! sing up end -->

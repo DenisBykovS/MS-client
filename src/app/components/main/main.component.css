@@ -1,0 +1,73 @@
+.home {
+  position: relative;
+  display: flex;
+  width: 1200px;
+  margin: 30px auto;
+  height: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.home p {
+  z-index: 10;
+}
+.home .fas {
+  cursor: pointer;
+  position: absolute;
+  font-size: 2rem;
+  color: gold;
+  opacity: 0.5;
+  z-index: 10;
+}
+.home .right,
+.home .left {
+  top: 50%;
+}
+.home .right:hover,
+.home .left:hover {
+  opacity: 1;
+}
+.home .right {
+  right: 1rem;
+  top: 50%;
+}
+.home .left {
+  left: 1rem;
+  top: 50%;
+}
+.home-baner {
+  display: none;
+}
+.active-baner {
+  /* background-image: url(../../../assets/img/n-baner.jpg); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  position: relative;
+  padding: 3rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+img {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 320px;
+  padding: 1.5rem 2.5rem;
+  background-color: lightslategrey;
+  opacity: 0.7;
+  border: none;
+  transition: all 1s ease;
+  color: gold;
+}
+
+button:hover {
+  color: lightslategrey;
+  background-color: gold;
+}

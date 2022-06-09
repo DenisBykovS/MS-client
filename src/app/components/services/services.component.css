@@ -1,0 +1,33 @@
+.services {
+  border-radius: 5px;
+  padding-top: 100px;
+  height: 400px;
+  margin: 0 auto;
+  width: 1200px;
+  background-image: url(../../../assets/img/manic-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services div {
+  display: flex;
+  margin-top: 100px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 320px;
+  padding: 1.5rem 2.5rem;
+  background-color: lightslategrey;
+  opacity: 0.7;
+  border: none;
+  transition: all 1s ease;
+  color: gold;
+}
+
+button:hover {
+  color: lightslategrey;
+  background-color: gold;
+}

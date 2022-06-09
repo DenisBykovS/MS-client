@@ -1,0 +1,11 @@
+<div class="search">
+  <input class="search-field" type="text" placeholder="Поиск по галереи" />
+</div>
+<div class="portfolio">
+  <div *ngFor="let p of pfotos" class="portfolio-card">
+    <div class="portfolio-name">{{ p.name }}</div>
+    <img src="{{ p.imageSrc }}" alt="" />
+    <a class="edit" (click)="editFoto(p._id)">Редактировать</a>
+    <a class="del" (click)="delite(p._id)">Удалить</a>
+  </div>
+</div>

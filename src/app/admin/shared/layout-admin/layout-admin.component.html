@@ -1,0 +1,9 @@
+<div *ngIf="adminService.isAuth()">
+  <ul>
+    <li><a [routerLink]="['/admin', 'portfolio']">Главная</a></li>
+    <li><a [routerLink]="['/admin', 'add']">Добавит фото</a></li>
+    <li><a [routerLink]="['/admin', 'message']">Сообщения</a></li>
+    <li><a routerLink="/" (click)="logout()">Выйти</a></li>
+  </ul>
+</div>
+<router-outlet></router-outlet>

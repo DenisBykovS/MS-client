@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Lobster', cursive;
+  font-size: 1rem;
+  color: black;
+  border: none;
+}
+*:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.menu {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+ul {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li a:hover {
+  color: crimson;
+}
+.active {
+  color: crimson;
+}

@@ -1,0 +1,122 @@
+.sing-up {
+  width: 1200px;
+  margin: 30px auto;
+  background-color: lightslategrey;
+  padding: 2rem 0;
+  border-radius: 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.sing-up-btn {
+  display: block;
+  border-radius: 5px;
+  width: 500px;
+  background-color: rgba(0, 181, 255, 1);
+  color: gold;
+  border: none;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+.sing-up-btn:hover {
+  transition: all 1.2s;
+  background-color: gold;
+  color: lightslategrey;
+}
+input,
+select,
+textarea {
+  color: grey;
+  margin: 10px auto;
+  width: 500px;
+  height: 2rem;
+  padding: 2px 5px;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  text-align: left;
+}
+select {
+  padding: 2px 0;
+  color: grey;
+  width: 511px;
+  height: 2.3rem;
+}
+select option{
+  color: gray;
+}
+textarea{
+  max-width: 500px;
+  min-height: 4rem;
+}
+
+.calendar{
+  padding: 1rem;
+  position: absolute;
+  width: 350px;
+  height: 300px;
+  z-index: 100;
+  background: white;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.month-menu{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.left{
+  color: gray;
+   font-size: 1.2rem;
+  cursor: pointer;
+ }
+.left:hover{
+  transition: all 1.2s;
+  color: darkgrey;
+}
+.right{
+  color: gray;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.right:hover{
+  transition: all 1.2s;
+  color: darkgrey;
+}
+.month{
+  color: gray;
+  font-size: 1.2rem;
+}
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th{
+  border: 1px solid black;
+  color: black;
+  background: gray;
+  padding: .5rem;
+}
+table td{
+  border: 1px solid black;
+  color: black;
+  background: gray;
+  cursor: pointer;
+  padding: .5rem;
+  text-align: center;
+  transition: all .2s;
+}
+table td:hover:not(.disabled){
+  background: lightgray;
+}
+.disabled{
+  opacity: .5;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

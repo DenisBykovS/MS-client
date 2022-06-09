@@ -1,0 +1,45 @@
+.add-foto {
+  margin: 0 auto;
+  width: 1200px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border-radius: 5px;
+  border: 1px solid crimson;
+  background: whitesmoke;
+  padding: 0.5rem 2rem;
+}
+.preview {
+  max-width: 1920px;
+  height: 500px;
+}
+.block-btn {
+  border-radius: 5px;
+  border: 1px solid crimson;
+  background: darkgreen;
+  padding: 0.5rem;
+}
+.block-btn:hover {
+  background: lightgreen;
+}
+.save {
+  width: 195px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid crimson;
+  background: red;
+}
+.save:hover {
+  background: lightcoral;
+}
+.btn {
+  cursor: pointer;
+  margin: 1rem;
+  margin-left: 0;
+}

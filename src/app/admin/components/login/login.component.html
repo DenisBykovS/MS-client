@@ -1,0 +1,12 @@
+<div class="layout">
+  <form [formGroup]="form" (submit)="adminIn()">
+    <input
+      formControlName="login"
+      placeholder="login" type="text" />
+    <input
+      formControlName="password"
+      placeholder="password" type="password" />
+    <button [disabled]="form.invalid" type="submit">Войти</button>
+  </form>
+
+</div>

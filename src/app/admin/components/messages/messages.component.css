@@ -1,0 +1,30 @@
+.messages {
+  margin: 0 auto;
+  width: 1200px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid crimson;
+  padding: 1rem;
+  width: 500px;
+  margin: 10px auto;
+  position: relative;
+}
+.del {
+  color: lightslategrey;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+}
+.del:hover {
+  color: crimson;
+}
+a {
+  cursor: pointer;
+}

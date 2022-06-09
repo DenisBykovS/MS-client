@@ -1,0 +1,54 @@
+<header>
+  <div class="header">
+    <ul class="header-menu">
+      <li><a routerLink="/" class="logo">ManicStudio</a></li>
+      <li class="menu-item">
+        <a [routerLinkActive]="['active']" routerLink="/main">главная</a>
+      </li>
+      <li class="menu-item">
+        <a [routerLinkActive]="['active']" routerLink="/services">услуги</a>
+      </li>
+      <li class="menu-item">
+        <a [routerLinkActive]="['active']" routerLink="/portfolio">галерея</a>
+      </li>
+      <li class="menu-item">
+        <a [routerLinkActive]="['active']" routerLink="/sing">записаться</a>
+      </li>
+      <li class="menu-item">
+        <a [routerLinkActive]="['active']" routerLink="/about">обо мне</a>
+      </li>
+    </ul>
+  </div>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  <div class="border-top"></div>
+  <div class="footer">
+    <div class="footer-logo">
+      <a href="" class="logo">ManicStudio</a>
+      <span>+8(999)999-99-99</span>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; ManicStudio All Rights Reserved</p>
+      <span>Сайт создан веб студией xo-developer</span>
+    </div>
+    <div class="footer-network">
+      <ul>
+        <li>
+          <a href="https://vk.com/id191196382"><i class="fab fa-vk"></i></a>
+        </li>
+        <!-- <li>
+          <a href=""><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+        </li> -->
+        <li>
+          <a><i class="fab fa-whatsapp-square" (click)="goWatsApp()"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

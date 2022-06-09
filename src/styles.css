@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: gold;
+  text-decoration: none;
+  font-family: 'Marck Script', cursive;
+  font-size: 1rem;
+  border: none;
+}
+*:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+body {
+  background: rgb(255, 0, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 254, 1) 0%,
+    rgba(0, 181, 255, 1) 100%
+  );
+}
+
+/*html,*/
+/*body {*/
+/*  height: 100%;*/
+/*}*/
+/*main{*/
+/*  height: 100%;*/
+/*}*/
